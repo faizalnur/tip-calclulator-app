@@ -19,40 +19,40 @@
   <div class="container">
     <div class="box input">
     <div class="form-group">
-      <label class="label">Bill </label>
+      <div class="label">Bill </div>
       <div class="input-group"><span class="icon-dollar"></span><input class="text-input" type="text" id="bill" aria-labelledby="Bill"></div>
     </div>
     <div class="form-group">
-      <label class="label">Select Tip %</label>
+      <div class="label">Select Tip %</div>
       <div class="tipp-container">
         <button class="btn-input" value="5" onclick="tipp(this.value)">5%</button> 
         <button class="btn-input" value="10" onclick="tipp(this.value)">10%</button>
         <button class="btn-input" value="15" onclick="tipp(this.value)">15%</button>
         <button class="btn-input" value="25" onclick="tipp(this.value)">25%</button>
         <button class="btn-input" value="50" onclick="tipp(this.value)">50%</button>
-        <input class="btn-input" type="text" onkeyup="tipp(this.value)" onclick="tipp(this.value)"  placeholder="Custom">
+        <input class="btn-input" type="text" onkeyup="tipp(this.value)" onclick="tipp(this.value)" aria-labelledby="tip"  placeholder="Custom">
         <input type="hidden" id="tip-input" aria-labelledby="tip">
       </div>
     </div>
     <div class="form-group">
-      <label class="label">
+      <div class="label">
         Number of People
-      </label>
+      </div>
       <div class="input-group"><span class="icon-person"></span><input class="text-input" type="text" id="person" aria-labelledby="Number of People"></div>
     </div>
   </div>
   <div class="box output">
     <div class="group-amount">
       <div class="label-group">
-        <label class="label"> Tip Amount</label>
-        <label class="sub-label">/ person</label>
+        <div class="label"> Tip Amount</div>
+        <div class="sub-label">/ person</div>
       </div>
       <div class="amount" id="tip">
          $0.00
       </div>
       <div class="label-group">
-        <label class="label"> Total</label>
-        <label class="sub-label">/ person</label>
+        <div class="label"> Total</div>
+        <div class="sub-label">/ person</div>
       </div>
       <div class="amount" id="total">
         $0.00
