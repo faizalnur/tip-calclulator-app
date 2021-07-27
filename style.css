@@ -16,13 +16,13 @@ html,body
     padding: 0;
     background-color:  var(--base-color);
 }
-main{
+section{
     display: flex;
     height:85vh;    
     justify-content: center;
     align-items: center;
 }
-main,header{
+section,header{
     font-family: 'Space Mono';
     font-weight: 400;
 }
@@ -220,7 +220,7 @@ input{
     background-color: var(--cyan);
 }
 @media screen and (max-width: 720px) {
-    main{
+    section{
         height: auto;
     }
     .container{
