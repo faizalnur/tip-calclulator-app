@@ -221,6 +221,9 @@ input{
     background-color: var(--cyan);
 }
 @media screen and (max-width: 720px) {
+    header{
+        height: auto;
+    }
     main{
         height: auto;
     }
