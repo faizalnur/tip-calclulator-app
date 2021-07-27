@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <header><div class="title">SPLITTER</div></header>
+  <main>
+  <div class="container">
+    <div class="box input">
+    <div class="form-group">
+      <div class="label">Bill </div>
+      <div class="input-group"><span class="icon-dollar"></span><input class="text-input" type="text" id="bill"></div>
+    </div>
+    <div class="form-group">
+      <div class="label">Select Tip %</div>
+      <div class="tipp-container">
+        <button class="btn-input" value="5" onclick="tipp(this.value)">5%</button> 
+        <button class="btn-input" value="10" onclick="tipp(this.value)">10%</button>
+        <button class="btn-input" value="15" onclick="tipp(this.value)">15%</button>
+        <button class="btn-input" value="25" onclick="tipp(this.value)">25%</button>
+        <button class="btn-input" value="50" onclick="tipp(this.value)">50%</button>
+        <input class="btn-input" type="text" onkeyup="tipp(this.value)" onclick="tipp(this.value)"  placeholder="Custom">
+        <input type="hidden" id="tip-input">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="label">
+        Number of People
+      </div>
+      <div class="input-group"><span class="icon-person"></span><input class="text-input" type="text" id="person"></div>
+    </div>
+  </div>
+  <div class="box output">
+    <div class="group-amount">
+      <div class="label-group">
+        <div class="label"> Tip Amount</div>
+        <div class="sub-label">/ person</div>
+      </div>
+      <div class="amount" id="tip">
+         $0.00
+      </div>
+      <div class="label-group">
+        <div class="label"> Total</div>
+        <div class="sub-label">/ person</div>
+      </div>
+      <div class="amount" id="total">
+        $0.00
+     </div>
+    </div>
+    <button class="reset" id="reset" onclick="resetAll()">Reset</button> 
+  </div>
+  </div>
+</main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Faizal Nur</a>.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
