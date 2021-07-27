@@ -23,7 +23,7 @@
       <div class="input-group"><span class="icon-dollar"></span><input class="text-input" type="text" id="bill" aria-label="Bill"></div>
     </div>
     <div class="form-group">
-      <div class="label" >Select Tip %</div>
+      <label class="label" for="tip">Select Tip %</label>
       <div class="tipp-container">
         <button class="btn-input" value="5" onclick="tipp(this.value)">5%</button> 
         <button class="btn-input" value="10" onclick="tipp(this.value)">10%</button>
@@ -31,7 +31,7 @@
         <button class="btn-input" value="25" onclick="tipp(this.value)">25%</button>
         <button class="btn-input" value="50" onclick="tipp(this.value)">50%</button>
         <input class="btn-input" type="text" onkeyup="tipp(this.value)" onclick="tipp(this.value)" aria-label="tip"  placeholder="Custom">
-        <input type="hidden" id="tip-input" >
+        <input type="hidden" id="tip-input" aria-label="tip">
       </div>
     </div>
     <div class="form-group">
@@ -44,15 +44,15 @@
   <div class="box output">
     <div class="group-amount">
       <div class="label-group">
-        <div class="label" for="tip"> Tip Amount</div>
-        <div class="sub-label" for="tip">/ person</div>
+        <div class="label" > Tip Amount</div>
+        <div class="sub-label" f>/ person</div>
       </div>
       <div class="amount" id="tip">
          $0.00
       </div>
       <div class="label-group">
-        <div class="label" > Total</label>
-        <div class="sub-label" >/ person</label>
+        <div class="label" > Total</div>
+        <div class="sub-label" >/ person</div>
       </div>
       <div class="amount" id="total">
         $0.00
